@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ background-color: #ffffff;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ width: 100%;
+ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #444cf755, #444cf7 );
+
+
+}
+
+#circle{
+    height: 300px;
+    width: 300px;
+    top: 50%;
+       right: 50%;
+       position: fixed;
+       z-index: 3000;
+    animation-name: rotate ;
+    animation-duration: 2s;
+    animation-iteration-count:  infinite;
+}
+@keyframes rotate{
+    0%{
+        rotate:0deg
+    }
+    100%{
+        rotate:360deg
+    }
+}
